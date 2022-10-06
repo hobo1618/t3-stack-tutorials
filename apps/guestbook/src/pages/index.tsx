@@ -2,7 +2,6 @@ import { useState } from "react";
 import type { NextPage } from "next";
 import { signIn, signOut, useSession } from "next-auth/react";
 import { trpc } from "../utils/trpc";
-import { createNextApiHandler } from "@trpc/server/adapters/next";
 
 const Home: NextPage = () => {
   const { data: session, status } = useSession();
