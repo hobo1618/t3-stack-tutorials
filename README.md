@@ -7,6 +7,7 @@ This turborepo uses [pnpm](https://pnpm.io) as a package manager. It contains ex
 ### Apps
 
 - `prisma-railway`: a basic example of how to connect prisma to a postgresql database hosted on [railway.io](railway.io) . I created the 'app' by following [this tutorial](https://dev.to/nextdev/how-to-connect-railway-app-with-nextjs-using-prisma-1eo8)
+- `guestbook`: a full stack guestbook into which authenticated users can post messages. Users are only able to authenticate through discord. Non authenticated users are only allowed to read messages. To recreate the app, follow this tutorial: [Build a full stack app with create-t3-app](https://www.nexxel.dev/blog/ct3a-guestbook)
 - `ui`: a stub React component library shared by both `web` and `docs` applications
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
