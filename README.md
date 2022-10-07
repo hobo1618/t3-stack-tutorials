@@ -6,7 +6,7 @@ This turborepo uses [pnpm](https://pnpm.io) as a package manager. It contains ex
 
 ### Apps
 
-- `prisma-railway`: a basic example of how to connect prisma to a postgresql database hosted on [railway.io](railway.io) . I created the 'app' by following (this tutorial)[https://dev.to/nextdev/how-to-connect-railway-app-with-nextjs-using-prisma-1eo8]
+- `prisma-railway`: a basic example of how to connect prisma to a postgresql database hosted on [railway.io](railway.io) . I created the 'app' by following [this tutorial](https://dev.to/nextdev/how-to-connect-railway-app-with-nextjs-using-prisma-1eo8)
 - `ui`: a stub React component library shared by both `web` and `docs` applications
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
