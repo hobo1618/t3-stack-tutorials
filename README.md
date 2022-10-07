@@ -1,15 +1,12 @@
-# Turborepo starter
-
-This is an official pnpm starter turborepo.
+# t3-stack examples
 
 ## What's inside?
 
-This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes the following packages/apps:
+This turborepo uses [pnpm](https://pnpm.io) as a package manager. It contains examples of "apps" built with some or all of the libraries found in the t3-stack:
 
-### Apps and Packages
+### Apps
 
-- `docs`: a [Next.js](https://nextjs.org) app
-- `web`: another [Next.js](https://nextjs.org) app
+- `prisma-railway`: a basic example of how to connect prisma to a postgresql database hosted on [railway.io](railway.io) . I created the 'app' by following (this tutorial)[https://dev.to/nextdev/how-to-connect-railway-app-with-nextjs-using-prisma-1eo8]
 - `ui`: a stub React component library shared by both `web` and `docs` applications
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
