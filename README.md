@@ -10,7 +10,7 @@ This turborepo uses [pnpm](https://pnpm.io) as a package manager. It contains ex
 - NextJS
 - Tailwind
 
-The stack doesn't prescribe a speccific database solution, though it does come with sqlite out of the box. Many of the tutorials use different database hosting platforms:
+The stack doesn't prescribe a specific database solution, though it does come with sqlite out of the box. The examples in this monorepo use different database hosting platforms:
 - [Railway](https://railway.app/): "Railway is a deployment platform where you can provision infrastructure, develop with that infrastructure locally, and then deploy to the cloud."
 
 ## Apps
