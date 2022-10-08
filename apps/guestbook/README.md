@@ -10,7 +10,7 @@ Prisma schema autocomplete / types didn't update after updating the schema. I tr
 ### NextAuth
 1. `pages/api/auth/[...nextauth].ts`
    1. the authOptions object is defined and exported, first passing through the `NextAuth()` function.
-   2. What does `NextAuth()` do? The docs basically say fuggettaboutit.
+   2. What does `NextAuth()` do? It initializes NextAuth. Ok, but what does it _do_? [fuggettaboutit](https://next-auth.js.org/configuration/initialization) say the docs.
 2. `server/common/get-server-auth-session.ts`
    1. `getServerAuthSession()` is exported, an async function which takes a `ctx: {res, req}` as params, as well as the `authOptions` from `nextAuth(options)`
    2. and returns a `session` object.
