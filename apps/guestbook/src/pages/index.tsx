@@ -5,6 +5,7 @@ import { trpc } from "../utils/trpc";
 
 const Home: NextPage = () => {
   const { data: session, status } = useSession();
+  // test out git
   const [message, setMessage] = useState("");
   const ctx = trpc.useContext();
   const postMessage = trpc.useMutation("guestbook.postMessage", {
