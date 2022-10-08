@@ -1,20 +1,29 @@
-# Turborepo starter
+# t3-stack examples
 
-This is an official pnpm starter turborepo.
+## The Stack
 
-## What's inside?
+This turborepo uses [pnpm](https://pnpm.io) as a package manager. It contains examples of "apps" built with some or all of the libraries found in the t3-stack:
+- [trpc](https://trpc.io/): "tRPC allows you to easily build & consume fully typesafe APIs, without schemas or code generation."
+- [prisma](https://www.prisma.io/): "Prisma is an open source next-generation ORM."
+- [NextAuth](https://next-auth.js.org/): "NextAuth.js is a complete open-source authentication solution for Next.js applications."
+- React
+- NextJS
+- Tailwind
 
-This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes the following packages/apps:
+The stack doesn't prescribe a specific database solution, though it does come with sqlite out of the box. The examples in this monorepo use different database hosting platforms:
+- [Railway](https://railway.app/): "Railway is a deployment platform where you can provision infrastructure, develop with that infrastructure locally, and then deploy to the cloud."
 
-### Apps and Packages
+## Apps
 
-- `docs`: a [Next.js](https://nextjs.org) app
-- `web`: another [Next.js](https://nextjs.org) app
+- `prisma-railway`: a basic example of how to connect prisma to a postgresql database hosted on [railway.io](railway.io) . I created the 'app' by following [this tutorial](https://dev.to/nextdev/how-to-connect-railway-app-with-nextjs-using-prisma-1eo8)
+- `guestbook`: a full stack guestbook into which authenticated users can post messages. Users are only able to authenticate through discord. Non authenticated users are only allowed to read messages. To recreate the app, follow this tutorial: [Build a full stack app with create-t3-app](https://www.nexxel.dev/blog/ct3a-guestbook)
 - `ui`: a stub React component library shared by both `web` and `docs` applications
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+
+## Using this turborepo
 
 ### Utilities
 
@@ -61,7 +70,7 @@ Next, you can link your Turborepo to your Remote Cache by running the following 
 pnpm dlx turbo link
 ```
 
-## Useful Links
+### Useful Links
 
 Learn more about the power of Turborepo:
 
